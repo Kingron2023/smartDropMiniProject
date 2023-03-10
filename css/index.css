@@ -1,0 +1,15 @@
+.dropdown-menu li a {
+    text-decoration: none;
+}
+
+.carousel-inner{
+    max-height: 300px;
+    width: 80% !important;
+    margin: auto;
+}
+
+.carousel-item > img{
+    height: 100% !important;
+    width:  100% !important;
+    border: 1px solid red;
+}
