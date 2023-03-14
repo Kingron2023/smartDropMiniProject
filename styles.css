@@ -32,7 +32,7 @@ a{
 }
 
 .categoryName {
-    margin: 30px 5%;
+    margin: 30px 2%;
     color: rgb(255, 255, 255);
     background-color: rgb(10, 70, 2);
     padding: 10px;
@@ -98,7 +98,7 @@ a{
 /* PRODUCT INFO PAGE CSS */
 
 .productInfo {
-    margin: 30px 5%;
+    margin: 30px 2%;
     color: rgb(255, 255, 255);
     background-color: rgb(10, 70, 2);
     padding: 10px;
