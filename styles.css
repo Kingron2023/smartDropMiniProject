@@ -451,7 +451,7 @@ h6 span{
 
 .form-style {
   padding: 13px 20px;
-  padding-left: 25px;
+  padding-left: 20px;
   height: 48px;
   width: 100%;
   font-weight: 500;
@@ -467,6 +467,13 @@ h6 span{
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
 }
+
+@media screen and (max-width: 380px) {
+  .form-style {
+    padding-left: 5px;
+  }
+}
+
 .form-select {
   padding: 13px 20px;
   padding-left: auto !important;
@@ -483,9 +490,6 @@ h6 span{
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21,21,21,.2) !important;
-
-
-    
 }
 .form-style:focus,
 .form-style:active {
