@@ -601,3 +601,45 @@ h6 span{
   box-shadow: 0 8px 24px 0 rgba(2, 87, 20, 0.743);
 }
 
+/* footer */
+
+
+.policy {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.policy a{
+  color: black;
+}
+
+.footer-logo {
+  padding-left: 0 !important;
+}
+
+.footer-logo img {
+  object-fit: cover;
+   height: 70px;
+   
+}
+
+.col-cx-over h5 {
+  font-weight: bold;
+}
+.contact-info {
+  font-size: 15px;
+  color: grey;
+}
+
+#footer-account a {
+  color: grey;
+}
+
+#footer-container {
+  padding: 20px;
+}
+
+.col-md-3 {
+  padding-top: 20px;
+}
+
