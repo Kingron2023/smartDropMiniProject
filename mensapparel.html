@@ -16,8 +16,11 @@
         <img src="./images/Logo/logo.png" alt="Logo" width="100" height="48">
       </a>
 
+      <!-- Button trigger modal -->
       <div class="d-grid gap-2 d-inline-flex">
-        <a href="./forms.html"><button class="btn btn-success me-md-2" type="button">Login/Signup</button></a>
+        <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Login/Signup
+        </button>
       </div>
 
       <a href="#"class="text-decoration-none">
@@ -168,6 +171,113 @@
         Major Project 1 <a href="#"> HTML</a> <a href="#"> CSS</a> <a href="#"> Bootstrap</a> <br> <i>All Reserved 2023</i></p>  
       </div> 
     </footer>
+
+    <!-- MODAL FORMS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body bg-black">
+            <!-- CONTENT HERE -->
+            <div class="categories">
+              <div class="section">
+                <div class="container">
+                  <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5">
+                      <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        
+                              <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                              <label for="reg-log"></label>
+
+                        <div class="card-3d-wrap mx-auto">
+                          <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                  <div class="center-wrap">
+                                    <div class="section text-center">
+
+                                            <h4 class="mb-4 pb-3">Log In</h4>
+
+                                            <div class="form-group" >
+                                              <input type="text" name="logusername" class="form-style" placeholder="Email" id="logusername" autocomplete="off">
+                                              <i class="input-icon uil uil-at"></i>
+                                            </div>	
+
+                                            <div class="form-group mt-2">
+                                              <input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+                                              <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+
+                                            <a href="#" class="btn mt-4 btnform">submit</a>
+                                            <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                  <div class="card-back">
+                                      <div class="center-wrap">
+                                        <div class="section text-center">
+
+                                            <h4 class="mb-4 pb-3">No Account yet? <br> Sign Up Now...</h4>
+
+                                            <div class="row formcontainer">
+                                                  <div class="select mt-2 d-flex justify-content-center">
+                                                    <select class="form-select form-select-lg mb-3 text-center" aria-label=".form-select-lg example">
+                                                        <option selected>Select Account Type</option>
+                                                        <option value="Customer">As Customer</option>
+                                                        <option value="Seller">As Seller</option>
+                                                        <option value="Supplier">As Supplier</option>
+                                                      </select>
+                                                  </div>
+
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <input type="text" name="fname" class="form-style" placeholder="First Name" id="fname" autocomplete="off">
+                                                          <i class="input-icon uil uil-user"></i>
+                                                      </div>	
+                                                      <div class="form-group mt-2">
+                                                          <input type="email" name="logemail" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+                                                          <i class="input-icon uil uil-at"></i>
+                                                      </div>	
+                                                      <div class="form-group mt-2">
+                                                          <input type="password" name="logpass" class="form-style" placeholder="Username" id="logpass" autocomplete="off">
+                                                          <i class="input-icon uil uil-lock-alt"></i>
+                                                      </div>        
+                                                  </div>
+
+                                                  <div class="col">
+                                                      <div class="form-group">
+                                                          <input type="text" name="lname" class="form-style" placeholder="Last Name" id="lname" autocomplete="off">
+                                                          <i class="input-icon uil uil-user"></i>
+                                                      </div>	
+                                                      <div class="form-group mt-2">
+                                                          <input type="text" name="logcontact" class="form-style" placeholder="Mobile #" id="logcontact" autocomplete="off">
+                                                          <i class="input-icon uil uil-at"></i>
+                                                      </div>	
+                                                      <div class="form-group mt-2">
+                                                          <input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+                                                          <i class="input-icon uil uil-lock-alt"></i>
+                                                      </div>        
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn mt-2 mb-2 btnform">submit</a>
+                                    </div>
+
+                                  </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+ </div>
+<!-- MODAL FORMS -->
 
 </body>
 </html>
