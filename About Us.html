@@ -95,14 +95,28 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   height: 400px;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+    #img-gradient {
+     height: 200px;
+    }  
+}
 .logo-footer {
-  height: 180px
-  width: 400px
+  height: 180px;
+  width: 400px;
 }
 #logo-footer {
   object-fit: cover;
-  height: 180px;
+  height: 150px;
   width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    #logo-footer, .logo-footer {
+     height: 100px;
+     width: auto;
+     object-fit: cover;
+    }  
 }
 #facebook {
   height: 30px;
@@ -185,7 +199,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     </div>
 
     <div style="padding-top: 50px;" class="text-center ">
-      <h2 class="fw-bold" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Smar Drop is an innovative e-commerce platform that is based in the Philippines.</h2>
+      <h2 class="fw-bold" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Smart Drop is an innovative e-commerce platform that is based in the Philippines.</h2>
       <p class="text-secondary">A simple project that our team developed to provide customers with an easy, fast, and secure online shopping <br> experience through strong payment and fulfillment support.<br><br> We believe online shopping should be accessible, easy and enjoyable. This is the vision Smart Drop <br> aspires to deliver on the platform, every single day.</p>
     </div>
 
@@ -208,7 +222,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           <p> By doing this, our goal is to help you make as much profit as possible while keeping your cost at a minimum. We believe that buyer and seller are equally important and should be treated equally at all times.</p>
           <div class="row mission">
             <div class="col-md-4">
-              <button><a href=""><img src="./images/About us/help.jpeg"></a></button>
+              <img src="./images/About us/help.jpeg">
             </div>
               <div class="col-md-4">
                 <img src="./images/About us/help2.jpg">
