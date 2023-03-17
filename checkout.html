@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
+    <link rel = "icon" href="./images/Logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -13,7 +14,7 @@
 <style>
     /* cart items */
     .cart-page {
-        margin: 80px;
+        margin: 20px auto auto 20px;
     }
     table {
         width: 100%;
@@ -63,7 +64,7 @@
     }
     .total-price table {
         border-top: 3px solid #00D775;
-        width: 100%;
+        width: 20%;
         max-width: 380px;
     }
 
@@ -115,11 +116,17 @@
     background-color: rgb(2, 39, 70) !important;
     transform: scale(1.01);
     transition: 1s;
-    width: 155%;
+    width: 100%;
   } 
 
   .text-end a{
     font-size: 20px;
+  }
+
+  /* checkoutform */
+
+  .checkoutform {
+    margin-top: 20px;
   }
 </style>
 <body>
@@ -178,71 +185,105 @@
         </div>
   </nav>
 
-  <div class="small-container cart-page">
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="./images/Laptops and Computers/Acer/acer1.jpg" id="acer-cart" alt="">
-                    <div>
-                        <p>Acer Monitor 144hz</p>
-                        <small>Price: ₱20,000</small> <br>
-                        <a class="remove-item" href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>₱20,000</td>
-        </tr>
-      
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="./images/Laptops and Computers/Asus/asus1.jpg" id="acer-cart" alt="">
-                    <div>
-                        <p>ASUS ROG STRIX CPU AMD R7-5800X GTX 1650</p>
-                        <small>Price: ₱49,500</small> <br>
-                        <a class="remove-item" href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>₱49,500</td>
-        </tr>
+  <div class="container py-5">
+    <div class="row justify-content-between">
+        <div class="col-md-7 align-self-start cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/Laptops and Computers/Acer/acer1.jpg" id="acer-cart" alt="">
+                            <div>
+                                <p>Acer Monitor 144hz</p>
+                                <small>Price: ₱20,000</small> <br>
+                                <a class="remove-item" href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>₱20,000</td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/Laptops and Computers/Asus/asus1.jpg" id="acer-cart" alt="">
+                            <div>
+                                <p>ASUS ROG STRIX CPU AMD R7-5800X GTX 1650</p>
+                                <small>Price: ₱49,500</small> <br>
+                                <a class="remove-item" href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>₱49,500</td>
+                </tr>
 
-    </table>
-    
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>₱1000</td>
-            </tr>
-            <tr>
-                <td>Delivery Fee</td>
-                <td>₱100</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>₱69,600</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="text-end" style="padding-bottom: 30px">
-                        <a href="./index.html"><button type="button" class="explore" role="button">CHECKOUT</button></a>
-                      </div>
-                </td>
+            </table>
+            
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>₱1000</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Fee</td>
+                        <td>₱100</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>₱69,600</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-4 checkoutform bg-light">
+            <h3>Checkout form</h3>
+            <div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                    </div>
+                    <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Phone</span>
+                    </div>
+                    <input type="Number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <p>Please select your delivery method:</p>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">Pick-up</label> 
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">Delivery</label><br>
+                  <hr>
+                  <p>Voucher Code</p>
+                  <input type="text" class="form-control">
+                  <div class="text-end" style="padding-bottom: 30px">
+                    <a href="./index.html"><button type="button" class="explore" role="button">CHECKOUT</button></a>
+                </div>
                 
-            </tr>
-        </table>
+            </div>
+        </div>
     </div>
   </div>
-  
 
 
 
@@ -300,7 +341,7 @@
     </footer>
     
    
-    <div class="container w-100">
+    <div class="container">
         <div class="row justify-content-between">
             <div class="col-auto mr-auto">
                 <p>&copy; 2023 Smart Drop by KodeGo Batch - WD52P | Group 2</p>
