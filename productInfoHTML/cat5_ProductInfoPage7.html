@@ -17,16 +17,12 @@
         <img src="../images/Logo/logo.png" alt="Logo" width="100" height="48">
       </a>
 
-      <div class="d-grid gap-2 d-inline-flex">
-        <a href="../forms.html"><button class="btn btn-success me-md-2" type="button">Login/Signup</button></a>
-      </div>
-
       <a href="#"class="text-decoration-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
         <th scope="col">Cart <span>0</span> </th>
-        </a>
+      </a>
 
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +41,9 @@
         </ul>
       </div>
     </div>
-  </nav>
-    
+</nav>
+      
+ <!-- BREADCRUMB AREA HERE    -->    
     <div class="breadcrumb-group">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -87,22 +84,46 @@
             <button type="button" class="btn btn-info w-100">Add to cart</button> <hr>
             <h5>Specifications:</h5> <br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, repudiandae dicta. Quasi consequuntur quae nisi voluptates dolores laboriosam repellendus cupiditate atque aspernatur labore, eius officiis! Dolor consectetur quia ipsam! Asperiores ex, commodi tempore iste quisquam magnam? Repellat ullam laudantium accusamus temporibus, voluptatibus corrupti non quaerat modi. Laudantium explicabo consequuntur cumque!</p>
+        
+         <!-- MODAL VIDEO ADS BUTTON HERE -->
+         <div class="btnVids d-flex justify-content-center">
+          <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#videoAds">
+            Check Available Video Ads Here
+          </button>
         </div>
-      </div>
+        
+        </div>
+        <!-- MODAL VIDEO ADS BUTTON HERE -->
+    </div>
+  </div>
+</div>
+       
+  <footer>
+    <div class="p-3 mb-2 text-light text-center text-xl-center footer"><b>Kodego Bootcamp</b>
+      <p>Web Development Batch W52P Group 2 <br>
+      Major Project 1 <a href="#"> HTML</a> <a href="#"> CSS</a> <a href="#"> Bootstrap</a> <br> <i>All Reserved 2023</i></p>  
+    </div> 
+  </footer>
+
+<!-- VIDEO ADS MODAL -->
+<div class="modal fade" id="videoAds" tabindex="-1" aria-labelledby="videoAdsLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header bg-black">
+      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
 
-      <footer>
-        <div class="p-3 mb-2 text-light text-center text-xl-center footer"><b>Kodego Bootcamp</b>
-          <p>Web Development Batch W52P Group 2 <br>
-          Major Project 1 <a href="#"> HTML</a> <a href="#"> CSS</a> <a href="#"> Bootstrap</a> <br> <i>All Reserved 2023</i></p>  
-        </div> 
-      </footer>
+    <div class="modal-body bg-black">
+      <!-- CONTENT HERE -->
+      <iframe class="container-fluid" width="760" height="415" src="https://www.youtube.com/embed/gEdrEZlvdFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <!-- VIDEO ADS MODAL -->
 
-      <script>
-        function IMGsrc(source) {
-          document.getElementById("productimg").src = source;
-        }
-      </script>
-     
+  <script>
+    function IMGsrc(source) {
+      document.getElementById("productimg").src = source;
+    }
+  </script>
+ 
 </body>
 </html>

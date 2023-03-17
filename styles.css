@@ -126,6 +126,11 @@ a{
     padding: 20px !important;
 }
 
+.col-md-5 p {
+  overflow-y: scroll;
+  height: 100px;
+}
+
 .small-img-row {
     display: flex;
     justify-content: space-evenly;
