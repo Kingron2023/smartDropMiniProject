@@ -62,6 +62,7 @@ a{
     border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
+    position: relative;
     overflow: hidden;
 }
 
@@ -75,6 +76,15 @@ a{
     width: 188px !important;
     height: 150px;
     
+}
+
+/* ICON CART */
+
+#iconCart {
+  width: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .price{
@@ -297,7 +307,7 @@ transition: 1s ease;
 
 /* product info footer */
 .product-footer {
-  background-color: #198754;
+  background-color: rgb(10, 70, 2);
   padding: 11px 0;
 }
 .product-footer a {
