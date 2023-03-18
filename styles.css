@@ -137,8 +137,8 @@ a{
 }
 
 .col-md-5 p {
-  overflow-y: scroll;
-  height: 100px;
+  overflow-y: auto;
+  height: 200px;
 }
 
 .small-img-row {
