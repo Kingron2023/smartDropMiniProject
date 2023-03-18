@@ -13,6 +13,9 @@
 
 <style>
     /* cart items */
+    * {
+        font-family: 'Roboto';
+    }
     .cart-page {
         margin: 20px auto auto 20px;
     }
@@ -64,7 +67,7 @@
     }
     .total-price table {
         border-top: 3px solid #00D775;
-        width: 20%;
+        width: 25%;
         max-width: 380px;
     }
 
@@ -128,6 +131,15 @@
   .checkoutform {
     margin-top: 20px;
   }
+
+  .modepayment {
+    border: none;
+  }
+  .modepayment:hover{
+    border: 1px solid #00D775;
+    border-radius: 10px;
+    transform: scale(1.01);
+  }
 </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -186,7 +198,7 @@
   </nav>
 
   <div class="container py-5">
-    <div class="row justify-content-between">
+    <div class="row justify-content-center">
         <div class="col-md-7 align-self-start cart-page">
             <table>
                 <tr>
@@ -205,7 +217,9 @@
                             </div>
                         </div>
                     </td>
-                    <td><input type="number" value="1"></td>
+                    <td> 
+                        <input type="number" value="1">
+                    </td>
                     <td>₱20,000</td>
                 </tr>
             
@@ -272,14 +286,28 @@
                   <input type="radio" id="html" name="fav_language" value="HTML">
                   <label for="html">Pick-up</label> 
                   <input type="radio" id="css" name="fav_language" value="CSS">
-                  <label for="css">Delivery</label><br>
-                  <hr>
-                  <p>Voucher Code</p>
-                  <input type="text" class="form-control">
+                  <label for="css">Delivery</label><br><br>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div> 
+
+                  <p>Voucher Code:</p>
+                  <input type="text" class="form-control"> <br>
+                  <!-- mode of payment -->
+                  <p style="font-size: 15px;">Mode of payment:   <button class="modepayment"><img src="./images/Payments/mastercard.png" alt=""></button>
+                    <button class="modepayment"><img src="./images/Payments/visa.png" alt=""></button>
+                    <button class="modepayment"><img src="./images/Payments/maya.png" alt=""></button>
+                 </p>
+                 <!-- checkout -->
                   <div class="text-end" style="padding-bottom: 30px">
                     <a href="./index.html"><button type="button" class="explore" role="button">CHECKOUT</button></a>
-                </div>
-                
+                  </div>
+
+                 
+                 
             </div>
         </div>
     </div>
