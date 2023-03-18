@@ -732,3 +732,8 @@ h6 span{
   padding-top: 20px;
 }
 
+@media screen and (min-width: 374px) {
+   .col-auto p {
+    font-size: 13px;
+  }
+}
