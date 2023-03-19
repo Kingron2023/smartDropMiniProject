@@ -709,10 +709,11 @@ h6 span{
   color: black;
 }
 
-.policy a:hover {
+.policy :hover {
   color: #033304;
   box-shadow: 0 8px 24px 0 rgba(2, 87, 20, 0.743);
-  border-radius: 50px;
+  border-radius: 30px;
+  color: green !important;
 }
 
 .footer-logo {
