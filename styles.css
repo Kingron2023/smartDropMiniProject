@@ -81,7 +81,7 @@ a{
 /* ICON CART */
 
 #iconCart {
-  width: 40px;
+  width: 25px;
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -709,10 +709,11 @@ h6 span{
   color: black;
 }
 
-.policy a:hover {
+.policy :hover {
   color: #033304;
   box-shadow: 0 8px 24px 0 rgba(2, 87, 20, 0.743);
-  border-radius: 50px;
+  border-radius: 30px;
+  color: green !important;
 }
 
 .footer-logo {
@@ -750,3 +751,42 @@ h6 span{
     font-size: 13px;
   }
 }
+
+
+/* thankyou section */
+
+.container-success{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* border: 3px solid rgb(1, 58, 13); */
+  margin: 0px 20%;
+  /* padding: 30px; */
+  
+}
+
+.success {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-right: 20px;
+}
+
+#productprice {
+  margin-left: 5%;
+}
+
+
+.success img {
+  height:80px;
+  /* margin: 0px 10%; */
+}
+
+#subtotal, #total {
+  float:right;
+  margin-left: 50px;
+}
+
+
+
