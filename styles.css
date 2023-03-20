@@ -83,8 +83,8 @@ a{
 #iconCart {
   width: 25px;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 240px;
+  right: 200px;
 }
 
 .price{
@@ -231,9 +231,9 @@ a{
 }
 
 .products:hover {
-    transform: translateY(25px);
+    transform: scale(1.1);
     opacity : 1;
-    transition-delay: 0.2s;
+    transition-delay: 0.4ss;
 }
 
 .products .image1{
@@ -303,7 +303,7 @@ a{
 }
 
 .imgsmall {
-    max-width: 100px;
+    max-width: 100%;
     height: 100px;
     border: 3px solid rgba(10, 45, 10, 0.8);
     border-radius: 10px;
@@ -788,5 +788,133 @@ h6 span{
   margin-left: 50px;
 }
 
+/* CHECKOUT PAGE CSS */
 
+ /* cart items */
+ * {
+  font-family: 'Roboto';
+}
+.cart-page {
+  margin: 20px auto auto 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+#acer-cart {
+  height: 120px;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-info p {
+  font-weight: bold;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: rgb(10, 70, 2);
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a{
+  color: #fb0808;
+  font-size: 12px
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.total-price table {
+  border-top: 3px solid #00D775;
+  width: 25%;
+  max-width: 380px;
+}
+
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  #acer-cart {
+      height: 80px;
+      width: 80px
+  }
+}
+/* button checkout */
+.explore {
+background-color: initial;
+background-image: linear-gradient(-180deg, #4cb184, #60c698);
+border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+color: #FFFFFF;
+cursor: pointer;
+display: inline-block;
+margin-top: 20px;
+font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+height: 44px;
+line-height: 44px;
+outline: 0;
+overflow: hidden;
+padding: 0 20px;
+pointer-events: auto;
+position: relative;
+text-align: center;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: top;
+white-space: nowrap;
+width: 170px;
+z-index: 9;
+border: 0;
+
+}
+
+.explore:hover {
+color: #fff !important;
+background-color: rgb(2, 39, 70) !important;
+transform: scale(1.01);
+transition: 1s;
+width: 100%;
+} 
+
+.text-end a{
+font-size: 20px;
+}
+
+/* checkoutform */
+
+.checkoutform {
+margin-top: 20px;
+}
+
+.modepayment {
+border: none;
+}
+.modepayment:hover{
+border: 1px solid #00D775;
+border-radius: 10px;
+transform: scale(1.01);
+}
