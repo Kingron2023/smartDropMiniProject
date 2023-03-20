@@ -27,7 +27,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
             </svg>
-            <th scope="col"><span class="text-black fw-bold">0</span> </th>
+            <th scope="col"><span class="text-black fw-bold" id="cartValue">1</span> </th>
         </a>
 
 
@@ -64,7 +64,6 @@
         </div>
         </div>
   </nav>
-
  
      <!-- carousel Area -->
      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -92,6 +91,7 @@
         </button>
       </div>
 <!--  -->
+
 <!-- categorie agri -->
 <div class="categoryName">
     <h2>Agricultural Machineries</h2>
@@ -101,6 +101,7 @@
     <div class="categories">
 
         <div class="products">
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart();">
           <a href="./productInfoHTML/cat0_ProductInfoPage1.html"><img class="image1" src="./images/Agricultural Machines/Mushroom Fruiting Bag Filling Machine/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -111,6 +112,7 @@
         </div>
 
         <div class="products">
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart2();">
           <a href="./productInfoHTML/cat0_ProductInfoPage2.html"><img class="image1" src="./images/Agricultural Machines/Multi-Purpose Shredder/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -121,6 +123,7 @@
         </div>
 
         <div class="products">
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart3();">
           <a href="./productInfoHTML/cat0_ProductInfoPage3.html"><img class="image1" src="./images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -131,6 +134,7 @@
         </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat0_ProductInfoPage4.html"><img class="image1" src="./images/Agricultural Machines/Grass Chopper Machine/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -141,6 +145,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat0_ProductInfoPage5.html"><img class="image1" src="./images/Agricultural Machines/Banana Trunk Chopper/agri1.jpg" alt="jersey1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -151,6 +156,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat0_ProductInfoPage6.html"><img class="image1" src="./images/Agricultural Machines/Multi-fiber Stripper/agri1.jpg" alt="shoes1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -161,6 +167,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat0_ProductInfoPage7.html"><img class="image1" src="./images/Agricultural Machines/Village Corn MillRice Mill Coffee Huller/agri1.jpg" alt="short1.jpg"></a>
         <div class="overlay">
             <div class="text">
@@ -171,6 +178,7 @@
     </div>
 
     <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
       <a href="./productInfoHTML/cat0_ProductInfoPage8.html"><img class="image1" src="./images/Agricultural Machines/Bio Shredder Heavy Duty/agri1.jpg" alt="shirt1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -193,6 +201,7 @@
         <div class="categories">
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                 <a href="./productInfoHTML/cat1_ProductInfoPage1.html"><img class="image1" src="./images/Laptops and Computers/Acer/acer1.jpg" alt="acer1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -203,6 +212,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat1_ProductInfoPage2.html"><img class="image1" src="./images/Laptops and Computers/Asus/asus1.jpg" alt="asus1.jpg"></a>                
                 <div class="overlay">
                     <div class="text">
@@ -213,6 +223,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat1_ProductInfoPage3.html"><img class="image1" src="./images/Laptops and Computers/Dell/dell1.jpg" alt="dell1.jpg"></a>                
               <div class="overlay">
                   <div class="text">
@@ -223,6 +234,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat1_ProductInfoPage4.html"><img class="image1" src="./images/Laptops and Computers/Hp/hp1.jpg" alt="hp1.jpg"></a>                
                  <div class="overlay">
                     <div class="text">
@@ -233,6 +245,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat1_ProductInfoPage5.html"><img class="image1" src="./images/Laptops and Computers/Lenovo/lenovo1.jpg" alt="lenovo1.jpg"></a>                
               <div class="overlay">
                   <div class="text">
@@ -243,6 +256,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat1_ProductInfoPage6.html"><img class="image1" src="./images/Laptops and Computers/Mac/mac1.jpg" alt="mac1.jpg"></a>                
               <div class="overlay">
                   <div class="text">
@@ -253,6 +267,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat1_ProductInfoPage7.html"><img class="image1" src="./images/Laptops and Computers/Msi/msi1.jpg" alt="msi1.jpg"></a>                
             <div class="overlay">
                 <div class="text">
@@ -263,6 +278,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat1_ProductInfoPage8.html"><img class="image1" src="./images/Laptops and Computers/Samsung/samsung1.jpg" alt="samsung1.jpg"></a>                
                 <div class="overlay">
                   <div class="text">
@@ -284,6 +300,7 @@
             <div class="categories">
     
                 <div class="products">
+                    <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                   <a href="./productInfoHTML/cat2_ProductInfoPage1.html"><img class="image1" src="./images/Tools and Equipments/Circular Saw/saw1.jpg" alt="saw1.jpg"></a>
                     <div class="overlay">
                         <div class="text">
@@ -294,6 +311,7 @@
                 </div>
     
                 <div class="products">
+                    <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                   <a href="./productInfoHTML/cat2_ProductInfoPage2.html"><img class="image1" src="./images/Tools and Equipments/Cordless Saw/cordless1.jpg" alt="cordless1.jpg"></a>
     
                     <div class="overlay">
@@ -305,6 +323,7 @@
                 </div>
     
                 <div class="products">
+                    <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                   <a href="./productInfoHTML/cat2_ProductInfoPage3.html"><img class="image1" src="./images/Tools and Equipments/Drill/drill1.jpg" alt="drill1.jpg"></a>
                   <div class="overlay">
                       <div class="text">
@@ -315,6 +334,7 @@
               </div>
     
               <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                 <a href="./productInfoHTML/cat2_ProductInfoPage4.html"><img class="image1" src="./images/Tools and Equipments/Grinder/grinder1.jpg" alt="grinder1.jpg"></a>
                     <div class="overlay">
                         <div class="text">
@@ -325,6 +345,7 @@
                 </div>
     
                 <div class="products">
+                    <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                   <a href="./productInfoHTML/cat2_ProductInfoPage5.html"><img class="image1" src="./images/Tools and Equipments/Jack Hammer/jack1.jpg" alt="jack1.jpg"></a>
                   <div class="overlay">
                       <div class="text">
@@ -335,6 +356,7 @@
               </div>
     
               <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                   <a href="./productInfoHTML/cat2_ProductInfoPage6.html"><img class="image1" src="./images/Tools and Equipments/Jig Saw/jig1.jpg" alt="jig1.jpg"></a>
                   <div class="overlay">
                       <div class="text">
@@ -345,6 +367,7 @@
               </div>
     
               <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                 <a href="./productInfoHTML/cat2_ProductInfoPage7.html"><img class="image1" src="./images/Tools and Equipments/Planer/planer1.jpg" alt="planer1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -355,6 +378,7 @@
             </div>
     
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
                 <a href="./productInfoHTML/cat2_ProductInfoPage8.html"><img class="image1" src="./images/Tools and Equipments/Rachet/rachet1.jpg" alt="rachet1.jpg"></a>
                   <div class="overlay">
                       <div class="text">
@@ -376,6 +400,7 @@
         <div class="categories">
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat3_ProductInfoPage1.html"><img class="image1" src="./images/Mobile and Gadgets/Airbuds/airbuds1.jpg" alt="airbuds1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -386,6 +411,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat3_ProductInfoPage2.html"><img class="image1" src="./images/Mobile and Gadgets/Airpods/airpod1.jpg" alt="airpod1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -396,6 +422,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat3_ProductInfoPage3.html"><img class="image1" src="./images/Mobile and Gadgets/Apple watch/watch1.jpg" alt="watch1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -406,6 +433,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat3_ProductInfoPage4.html"><img class="image1" src="./images/Mobile and Gadgets/Gaming console/part1.jpg" alt="part1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -416,6 +444,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat3_ProductInfoPage5.html"><img class="image1" src="./images/Mobile and Gadgets/iPhone/iphone1.jpg" alt="iphone1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -426,6 +455,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat3_ProductInfoPage6.html"><img class="image1" src="./images/Mobile and Gadgets/Portable devices/part1.jpg" alt="part1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -436,6 +466,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat3_ProductInfoPage7.html"><img class="image1" src="./images/Mobile and Gadgets/Samsung Galaxy/galaxy1.jpg" alt="galaxy1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -446,6 +477,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat3_ProductInfoPage8.html"><img class="image1" src="./images/Mobile and Gadgets/Smart watch/smart1.jpg" alt="smart1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -467,6 +499,7 @@
         <div class="categories">
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat4_ProductInfoPage1.html"><img class="image1" src="./images/Home and Living/Appliances/appliances1.jpg" alt="appliances1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -477,6 +510,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat4_ProductInfoPage2.html"><img class="image1" src="./images/Home and Living/Bedroom/image1.jpg" alt="image1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -487,6 +521,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat4_ProductInfoPage3.html"><img class="image1" src="./images/Home and Living/Dining/image1.jpg" alt="image1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -497,6 +532,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat4_ProductInfoPage4.html"><img class="image1" src="./images/Home and Living/Furniture/furniture1.jpg" alt="furniture1.jpg"></a>
                 <div class="overlay">
                     <div class="text">
@@ -507,6 +543,7 @@
             </div>
 
             <div class="products">
+                <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
               <a href="./productInfoHTML/cat4_ProductInfoPage5.html"><img class="image1" src="./images/Home and Living/Home Decors/decor1.jpg" alt="decor1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -517,6 +554,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat4_ProductInfoPage6.html"><img class="image1" src="./images/Home and Living/Kitchen ware/utensil1.jpg" alt="utensil1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -527,6 +565,7 @@
           </div>
 
           <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
             <a href="./productInfoHTML/cat4_ProductInfoPage7.html"><img class="image1" src="./images/Home and Living/Laundry/laundry1.jpg" alt="laundry1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -537,6 +576,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat4_ProductInfoPage8.html"><img class="image1" src="./images/Home and Living/Pantry/pantry1.jpg" alt="pantry1.jpg"></a>
               <div class="overlay">
                   <div class="text">
@@ -558,6 +598,7 @@
     <div class="categories">
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat5_ProductInfoPage1.html"><img class="image1" src="./images/Womens Apparel/Coat/coat1.jpg" alt="coat1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -568,6 +609,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat5_ProductInfoPage2.html"><img class="image1" src="./images/Womens Apparel/Dress/dress1.jpg" alt="dress1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -578,6 +620,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat5_ProductInfoPage3.html"><img class="image1" src="./images/Womens Apparel/Gown/gown1.jpg" alt="gown1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -588,6 +631,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat5_ProductInfoPage4.html"><img class="image1" src="./images/Womens Apparel/Jeans/jeans1.jpg" alt="jeans1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -598,6 +642,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat5_ProductInfoPage5.html"><img class="image1" src="./images/Womens Apparel/Leggings/leggings1.jpg" alt="leggings1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -608,6 +653,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat5_ProductInfoPage6.html"><img class="image1" src="./images/Womens Apparel/Longsleeves/longsleeve1.jpg" alt="longsleeve1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -618,6 +664,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat5_ProductInfoPage7.html"><img class="image1" src="./images/Womens Apparel/Skirt/skirt1.jpg" alt="skirt1.jpg"></a>
         <div class="overlay">
             <div class="text">
@@ -628,6 +675,7 @@
     </div>
 
     <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
       <a href="./productInfoHTML/cat5_ProductInfoPage8.html"><img class="image1" src="./images/Womens Apparel/T-Shirt/shirt1.jpg" alt="shirt1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -649,6 +697,7 @@
     <div class="categories">
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat6_ProductInfoPage1.html"><img class="image1" src="./images/Mens Apparel/Head Cup/cup1.jpg" alt="cup1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -659,6 +708,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat6_ProductInfoPage2.html"><img class="image1" src="./images/Mens Apparel/Jackets/jacket1.jpg" alt="jacket1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -669,6 +719,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat6_ProductInfoPage3.html"><img class="image1" src="./images/Mens Apparel/Jeans/pants1.jpg" alt="pants1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -679,6 +730,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat6_ProductInfoPage4.html"><img class="image1" src="./images/Mens Apparel/Longsleeves/longsleeve1.jpg" alt="longsleeve1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -689,6 +741,7 @@
         </div>
 
         <div class="products">
+            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
           <a href="./productInfoHTML/cat6_ProductInfoPage5.html"><img class="image1" src="./images/Mens Apparel/Riding Jersey/jersey1.jpg" alt="jersey1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -699,6 +752,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat6_ProductInfoPage6.html"><img class="image1" src="./images/Mens Apparel/Shoes/shoes1.jpg" alt="shoes1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -709,6 +763,7 @@
       </div>
 
       <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
         <a href="./productInfoHTML/cat6_ProductInfoPage7.html"><img class="image1" src="./images/Mens Apparel/Shorts/short1.jpg" alt="short1.jpg"></a>
         <div class="overlay">
             <div class="text">
@@ -719,6 +774,7 @@
     </div>
 
     <div class="products">
+        <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
       <a href="./productInfoHTML/cat6_ProductInfoPage8.html"><img class="image1" src="./images/Mens Apparel/T-Shirt/shirt1.jpg" alt="shirt1.jpg"></a>
           <div class="overlay">
               <div class="text">
@@ -746,7 +802,7 @@
         <div class="container1">
             <div class="row d-inline-flex w-100 justify-content-center text-center">
                 <div class="col col-md-3 policy">
-                    <a href="termandconditions.html">Terms & Conditions</a>
+                    <a href="">Terms & Conditions</a>
                 </div>
     
                 <div class="col col-md-3 policy">
@@ -754,11 +810,11 @@
                 </div>
 
                 <div class="col col-md-3 policy">
-                    <a href="Supportpolicy.html">Support Policy</a>
+                    <a href="">Support Policy</a>
                 </div>
     
                 <div class="col col-md-3 policy">
-                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="">Privacy Policy</a>
                 </div>
             </div>
         </div> <hr>
@@ -849,8 +905,8 @@
                                                 <i class="input-icon uil uil-lock-alt"></i>
                                               </div>
 
-                                              <a href="./indexCart.html" class="btn mt-4 btnform fw-bold">submit</a>
-                                              <p class="mb-0 mt-4 text-center"><a href="#" class="link">Forgot your password?</a></p>
+                                              <a href="#" class="btn mt-4 btnform fw-bold">submit</a>
+                                              <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
                                       </div>
                                     </div>
                                   </div>
@@ -881,7 +937,7 @@
                                                             <i class="input-icon uil uil-at"></i>
                                                         </div>	
                                                         <div class="form-group mt-2">
-                                                            <input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+                                                            <input type="password" name="logpass" class="form-style" placeholder="Username" id="logpass" autocomplete="off">
                                                             <i class="input-icon uil uil-lock-alt"></i>
                                                         </div>        
                                                     </div>
@@ -896,13 +952,13 @@
                                                             <i class="input-icon uil uil-at"></i>
                                                         </div>	
                                                         <div class="form-group mt-2">
-                                                            <input type="password" name="logpass" class="form-style" placeholder="Confirm Password" id="logpass" autocomplete="off">
+                                                            <input type="password" name="logpass" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
                                                             <i class="input-icon uil uil-lock-alt"></i>
                                                         </div>        
                                                     </div>
                                               </div>
                                           </div>
-                                          <a href="#" class="btn mt-2 mb-2 btnform" onclick="submitAletr()">submit</a>
+                                          <a href="#" class="btn mt-2 mb-2 btnform">submit</a>
                                       </div>
 
                                     </div>
@@ -916,12 +972,6 @@
       </div>
    </div>
   <!-- MODAL FORMS -->
-   <script>
-    function submitAletr() {
-        alert('You may now login to your account and proceed with your first transaction with us');
-        location.reload();
-    }
-
-   </script>
+   <script src="./smartdrop.js"></script>
 </body>
 </html>

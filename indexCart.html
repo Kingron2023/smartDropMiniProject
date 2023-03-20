@@ -16,18 +16,18 @@
             <img src="./images/Logo/logo.png" alt="Logo" width="100" height="48">
         </a>
 
-        <!-- Button trigger modal -->
-      <div class="d-grid gap-2 d-inline-flex">
-        <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Login/Signup
-        </button>
-      </div>
+            <!-- Button trigger modal -->
+            <div class="d-grid gap-2 d-inline-flex me-md-3">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    <!-- <img src="./images/Logo/login.png " alt="login" width="37" height="37" > -->
+                </a>
+            </div>
 
-        <a href="#"class="text-decoration-none">
+        <a href="#"class="text-decoration-none text-black">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
             </svg>
-            <th scope="col">Cart <span>0</span> </th>
+            <th scope="col"><span class="text-black fw-bold" id="cartValue">0</span> </th>
         </a>
 
 
@@ -42,7 +42,7 @@
                 Categories
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
-                    <li><button class="dropdown-item" type="button"><a href="./agriMachines.html">Agricultural Machineries</a></button></li>
+                    <li><button class="dropdown-item" type="button"><a href="./agriMachineswithCart.html">Agricultural Machineries</a></button></li>
                     <li><button class="dropdown-item" type="button"><a href="./laptopscomputer.html">Laptops and Computers</a></button></li>
                     <li><button class="dropdown-item" type="button" ><a href="./tools&Equipments.html">Tools and Equipments</a></button></li>
                     <li><button class="dropdown-item" type="button" ><a href="./mobile&gadgets.html">Mobile and Gadgets</a></button></li>
@@ -91,6 +91,7 @@
         </button>
       </div>
 <!--  -->
+
 <!-- categorie agri -->
 <div class="categoryName">
     <h2>Agricultural Machineries</h2>
@@ -100,7 +101,7 @@
     <div class="categories">
 
         <div class="products">
-            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart();">
           <a href="./productInfoHTML/cat0_ProductInfoPage1.html"><img class="image1" src="./images/Agricultural Machines/Mushroom Fruiting Bag Filling Machine/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -111,7 +112,7 @@
         </div>
 
         <div class="products">
-            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart2();">
           <a href="./productInfoHTML/cat0_ProductInfoPage2.html"><img class="image1" src="./images/Agricultural Machines/Multi-Purpose Shredder/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -122,7 +123,7 @@
         </div>
 
         <div class="products">
-            <a href=""><img id="iconCart" src="./images/Logo/cart.png" alt="cart"></a>
+            <img id="iconCart" src="./images/Logo/cart.png" alt="cart" data-toggle="tooltip" data-placement="top" title="Add to Cart"  class="iconAdd" onclick="addCart3();">
           <a href="./productInfoHTML/cat0_ProductInfoPage3.html"><img class="image1" src="./images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image1.jpg" alt="image1.jpg"></a>
             <div class="overlay">
                 <div class="text">
@@ -801,7 +802,7 @@
         <div class="container1">
             <div class="row d-inline-flex w-100 justify-content-center text-center">
                 <div class="col col-md-3 policy">
-                    <a href="termandconditions.html">Terms & Conditions</a>
+                    <a href="">Terms & Conditions</a>
                 </div>
     
                 <div class="col col-md-3 policy">
@@ -809,11 +810,11 @@
                 </div>
 
                 <div class="col col-md-3 policy">
-                    <a href="Supportpolicy.html">Support Policy</a>
+                    <a href="">Support Policy</a>
                 </div>
     
                 <div class="col col-md-3 policy">
-                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="">Privacy Policy</a>
                 </div>
             </div>
         </div> <hr>
@@ -971,6 +972,6 @@
       </div>
    </div>
   <!-- MODAL FORMS -->
-
+   <script src="./smartdrop.js"></script>
 </body>
 </html>

@@ -17,11 +17,11 @@
         <img src="../images/Logo/logo.png" alt="Logo" width="100" height="48">
       </a>
 
-      <a href="#"class="text-decoration-none">
+      <a href="../checkout.html" class="text-decoration-none text-black">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
-        <th scope="col">Cart <span>0</span> </th>
+        <th scope="col"><span id="cartValue3">3</span> </th>
       </a>
 
 
@@ -49,7 +49,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
               <li class="breadcrumb-item"><a href="../agriMachines.html">Agricutural Machineries</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Grass Chopper Machine</li>
+              <li class="breadcrumb-item active" aria-current="page">Multi-Purpose Shredder with Wood Chipper</li>
             </ol>
           </nav>
     </div>
@@ -61,28 +61,28 @@
     <div class="container-bg-light">
         <div class="row d-inline-flex justify-content-center">
           <div class="col-md-5">
-            <img src="../images/Agricultural Machines/Grass Chopper Machine/image1.jpg" id="productimg" style="height: 500px; padding-bottom: 50px" class="w-100">
+            <img src="../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image1.jpg" id="productimg" style="height: 500px; padding-bottom: 50px" class="w-100">
             
             <div class="small-img-row">
               <div class="small-img-col">
-                <img onclick="IMGsrc('../images/Agricultural Machines/Grass Chopper Machine/image1.jpg')" src="../images/Agricultural Machines/Grass Chopper Machine/image1.jpg" style="width: 100%; padding-top: 30px" class="imgsmall">
+                <img onclick="IMGsrc('../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image1.jpg')" src="../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image1.jpg" style="width: 100%; padding-top: 30px" class="imgsmall">
               </div>
               <div class="small-img-col">
-                <img onclick="IMGsrc('../images/Agricultural Machines/Grass Chopper Machine/image2.jpg')" src="../images/Agricultural Machines/Grass Chopper Machine/image2.jpg" style="width: 100%" class="imgsmall">
+                <img onclick="IMGsrc('../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image2.jpg')" src="../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image2.jpg" style="width: 100%" class="imgsmall">
               </div>
               <div class="small-img-col">
-                <img onclick="IMGsrc('../images/Agricultural Machines/Grass Chopper Machine/image3.jpg')" src="../images/Agricultural Machines/Grass Chopper Machine/image3.jpg" style="width: 100%" class="imgsmall">
+                <img onclick="IMGsrc('../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image3.jpg')" src="../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image3.jpg" style="width: 100%" class="imgsmall">
               </div>
               <div class="small-img-col">
-                <img onclick="IMGsrc('../images/Agricultural Machines/Grass Chopper Machine/image4.jpg')" src="../images/Agricultural Machines/Grass Chopper Machine/image4.jpg" style="width: 100%" class="imgsmall">
+                <img onclick="IMGsrc('../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image4.jpg')" src="../images/Agricultural Machines/Multi-Purpose Shredder with wood Chipper/image4.jpg" style="width: 100%" class="imgsmall">
               </div>
             </div>
           </div>
           
           <div class="col-md-5">
-            <h1 class="fw-bold">Grass Chopper Machine</h1>
-            <h4 class="text-success fw-bold">₱26,999</h4> <hr>
-            <button type="button" class="btn btn-success w-100" onclick="alert('Please signup an account to proceed with this transaction')" >Add to cart</button> <hr>
+            <h1 class="fw-bold">Multi-Purpose Shredder with Wood Chipper</h1>
+            <h4 class="text-success fw-bold">₱75,000</h4> <hr>
+            <button type="button" class="btn btn-success w-100" onclick="addCart3()">Add to cart</button> <hr>
              
             <h5>Specifications:</h5> <br>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, repudiandae dicta. Quasi consequuntur quae nisi voluptates dolores laboriosam repellendus cupiditate atque aspernatur labore, eius officiis! Dolor consectetur quia ipsam! Asperiores ex, commodi tempore iste quisquam magnam? Repellat ullam laudantium accusamus temporibus, voluptatibus corrupti non quaerat modi. Laudantium explicabo consequuntur cumque!</p>
@@ -90,7 +90,7 @@
             
             <!-- MODAL VIDEO ADS BUTTON HERE -->
             <div class="btnVids d-flex justify-content-center">
-              <button type="button" class="btn btn- me-md-2 bg-secondary" data-bs-toggle="modal" data-bs-target="#videoAds" disabled>
+              <button type="button" class="btn btn-success me-md-2" data-bs-toggle="modal" data-bs-target="#videoAds">
                 Check Available Video Ads Here
               </button>
             </div>
@@ -136,6 +136,7 @@
           </div>
       </div>
    </div>
+
   <!-- VIDEO ADS MODAL -->
   <div class="modal fade" id="videoAds" tabindex="-1" aria-labelledby="videoAdsLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -146,7 +147,7 @@
 
         <div class="modal-body bg-black">
           <!-- CONTENT HERE -->
-          <iframe class="container-fluid" width="760" height="415" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="container-fluid" width="760" height="415" src="https://www.youtube.com/embed/HG4Uz7PaRVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
           <!-- VIDEO ADS MODAL -->
 
@@ -154,8 +155,12 @@
         function IMGsrc(source) {
           document.getElementById("productimg").src = source;
         }
+
+        function addCart3(){
+     document.getElementById("cartValue3").innerText = "4";    
+        }
       </script>
-     
+    
 </body>
 </html>
 
